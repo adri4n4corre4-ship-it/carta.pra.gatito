@@ -1,7 +1,8 @@
 <!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Para você ♡</title>  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♡</title>  <style>
     * {
       box-sizing: border-box;
     }
@@ -23,10 +24,11 @@
 
     .page {
       width: min(760px, 100%);
-      min-height: 850px;
       padding: 70px 65px;
-      background:
-        linear-gradient(rgba(255,250,239,0.94), rgba(250,242,224,0.96));
+      background: linear-gradient(
+        rgba(255,250,239,0.94),
+        rgba(250,242,224,0.96)
+      );
       border: 1px solid rgba(100,80,55,0.18);
       box-shadow:
         0 18px 45px rgba(60,45,30,0.18),
@@ -42,39 +44,9 @@
       pointer-events: none;
     }
 
-    .top {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .little-heart {
-      font-size: 22px;
-      opacity: 0.7;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(30px, 6vw, 48px);
-      font-weight: normal;
-      letter-spacing: 1px;
-    }
-
-    .subtitle {
-      margin-top: 14px;
-      font-size: 15px;
-      font-style: italic;
-      opacity: 0.72;
-    }
-
-    .line {
-      width: 90px;
-      height: 1px;
-      background: rgba(90,70,45,0.35);
-      margin: 28px auto 0;
-    }
-
     .letter {
+      position: relative;
+      z-index: 1;
       font-size: 18px;
       line-height: 1.95;
       text-align: left;
@@ -84,41 +56,36 @@
       margin: 0 0 25px;
     }
 
-    .closing {
-      text-align: center;
-      margin-top: 45px;
-      font-size: 18px;
-      font-style: italic;
-    }
-
     .heart {
-      display: block;
-      margin-top: 18px;
+      text-align: center;
+      margin-top: 42px;
       font-size: 24px;
+      opacity: 0.65;
     }
 
     .corner {
       position: absolute;
+      z-index: 2;
       font-size: 20px;
       opacity: 0.35;
     }
 
-    .corner.one {
+    .one {
       top: 28px;
       left: 30px;
     }
 
-    .corner.two {
+    .two {
       top: 28px;
       right: 30px;
     }
 
-    .corner.three {
+    .three {
       bottom: 28px;
       left: 30px;
     }
 
-    .corner.four {
+    .four {
       bottom: 28px;
       right: 30px;
     }
@@ -130,7 +97,6 @@
 
       .page {
         padding: 55px 32px;
-        min-height: auto;
       }
 
       .page::before {
@@ -151,18 +117,6 @@
 <div class="corner three">♡</div>
 <div class="corner four">♡</div>
 
-<header class="top">
-  <div class="little-heart">♡</div>
-
-  <h1>Para você</h1>
-
-  <div class="subtitle">
-    uma pequena carta, escrita com muito carinho
-  </div>
-
-  <div class="line"></div>
-</header>
-
 <section class="letter">
 
   <p>
@@ -170,31 +124,28 @@
   </p>
 
   <p>
-    Quero que você saiba que você não é um namorado ruim, e não importa qual razão você esteja pensando para me contrariar, ela não é válida.
+    Quero que você saiba que você não é um namorado ruim, e não importa qual razão você esteja pensando para me contrariar, essa razão não é válida.
   </p>
 
   <p>
-    Sinto muito por ter me afastado e por ter deixado que meus sentimentos e pensamentos ruins chegassem até você... justamente eu tinha medo disso.
+    Sinto muito por ter me afastado e por ter deixado que meus sentimentos e pensamentos ruins chegassem até você... justamente isso era o que me dava medo.
   </p>
 
   <p>
-    Quero te agradecer por tudo o que você faz por mim, pela sua paciência, por cuidar de mim e por todas aquelas vezes em que você tenta estar ao meu lado, mesmo quando talvez não saiba exatamente o que fazer.
+    Quero agradecer por tudo o que você faz por mim, pela sua paciência, por cuidar de mim e por todas aquelas vezes em que você tenta estar ao meu lado. Obrigada por tudo.
   </p>
 
   <p>
-    Por isso, não quero que os nossos problemas sejam aquilo que você usa para se definir como namorado, nem que os meus próprios momentos difíceis façam você pensar que não é suficiente.
+    Por isso, não quero que, por causa dos problemas da vida, você pense que isso define quem você é como namorado, nem que use isso para se definir.
   </p>
 
   <p>
-    Me dá até pena te dizer isso, mas você sabe que eu sou apaixonada por tudo o que você é e que eu te amo mais do que qualquer coisa.
+    Eu te entendo e te amo mais do que qualquer coisa. Te mando um abraço, agora e sempre que você se lembrar disso.
   </p>
+
+  <div class="heart">♡</div>
 
 </section>
 
-<footer class="closing">
-  Com amor, para você.
-  <span class="heart">♡</span>
-</footer>
-
   </main></body>
-  </html>
+</html>
